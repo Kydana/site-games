@@ -68,6 +68,7 @@ body {
 
 .body {
     background-color: #202027;
+    
 }
 
 .body__part-1 {
@@ -157,6 +158,99 @@ body {
 .body__product-min {height: 473px;}
 .body__product-norm {height: 512px;}
 .body__product-big {height: 551px;}
+
+.mini-games {
+    background-color: #202027;
+    background-image: url(img/Star\ 7.png), url(img/Star\ 6.png), url(img/Star\ 8.png), url(img/Star\ 10.png);
+    background-position: 1158px 47px, 1320px 126px, 1319px 3366px, 1249px 3414px;
+    background-repeat: no-repeat;
+    &__content { 
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
+        padding-top: 46px;
+        padding-bottom: 144px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 64px;
+        color: #fff;
+        font-family: "montserrat", sans-serif;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__unit {
+        background-color: #fff;
+        border-radius: 30px;
+    }
+
+    &__unit-left {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    &__unit-right {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__unit-card {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+        width: 600px;
+        padding: 48px 48px;
+    }
+
+    &__unit-check {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__unit-title {
+        font-weight: 700;
+        font-size: 48px;
+    }
+
+    &__unit-discription {
+        font-weight: 400;
+        font-size: 24px;
+    }
+
+    &__unit-button {
+        width: 247px;
+        height: 66px;
+        border: 1px solid #202027;
+        background-color: #202027;
+        border-radius: 60px;
+        color: #fff;
+        font-family: "montserrat", sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 24px;
+    }
+    &__unit-button:hover {
+        border: 1px solid #202027;
+        background-color: #fff;
+        color: #202027;
+    }
+
+    &__unit-img {
+        border-radius: 30px;
+        background-color: #202027;
+    }
+}
 
 .footer {
     background-color: #BDED35;
