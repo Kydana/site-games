@@ -5,9 +5,14 @@
     }
 
     .hero-page {
+        &__header {
+            align-items: center;
+        }
         &__content {
             display: flex;
+            flex-direction: column;
             align-items: center;
+            gap: 48px;
         }
         &__title {
             font-weight: 700;
@@ -24,6 +29,52 @@
         &__button {
             width: 285px;
             height: 55px;
+            font-size: 16px;
+        }
+    }
+
+    .mini-games {
+        &__content {
+            font-weight: 700;
+            padding-top: 48px;
+            padding-bottom: 10px;
+        }
+
+        &__title {
+            font-size: 40px;
+        }
+
+        &__block {
+            gap: 24px;
+        }
+
+        &__unit {
+            display: flex;
+            flex-direction: column;
+            width: 343px;
+        }
+
+        &__unit-img {
+            width: 343px;
+            height: 285px;
+        }
+
+        &__unit-card {
+            width: 285px;
+            padding: 29px 29px;
+        }
+
+        &__unit-title {
+            font-size: 32px;
+        }
+
+        &__unit-discription {
+            font-size: 16px;
+            width: 285px;
+        }
+
+        &__unit-button {
+            width: 285px;
             font-size: 16px;
         }
     }
