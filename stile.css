@@ -15,9 +15,10 @@ body {
 
 .hero-page {
   background-color: #E1FF8F;
-  background-image: url(img/hero-page_img.png);
+  height: 800px;
   background-repeat: no-repeat;
   background-position: right;
+  position: relative;
 }
 
 .hero-page__content {
@@ -26,6 +27,10 @@ body {
   gap: 48px;
   padding-top: 196px;
   padding-bottom: 246px;
+}
+
+.hero-page__mob-img {
+  display: none;
 }
 
 .hero-page__header {
@@ -183,7 +188,7 @@ body {
   padding-bottom: 144px;
 }
 .mini-games__title {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 64px;
   color: #fff;
   font-family: "montserrat", sans-serif;
@@ -251,7 +256,98 @@ body {
   background-color: #202027;
 }
 
+.img-star {
+  display: block;
+}
+.img-star__star1 {
+  margin: 0 auto;
+  float: right;
+  position: absolute;
+  top: -333.46px;
+  left: 854px;
+}
+.img-star__star2 {
+  margin: 0 auto;
+  float: right;
+  position: absolute;
+  top: 94px;
+  left: 63px;
+}
+.img-star__star3 {
+  margin: 0 auto;
+  float: right;
+  position: absolute;
+  top: 69px;
+  left: 156px;
+}
+.img-star__star4 {
+  margin: 0 auto;
+  float: right;
+  position: absolute;
+  top: 568px;
+  left: 1013px;
+}
+.img-star__star5 {
+  margin: 0 auto;
+  float: right;
+  position: absolute;
+  top: 538px;
+  left: 948px;
+}
+.img-star__star6 {
+  margin: 0 auto;
+  float: right;
+  position: absolute;
+  top: 877px;
+  left: 933px;
+}
+.img-star__star7 {
+  margin: 0 auto;
+  float: right;
+  position: absolute;
+  top: 1570px;
+  left: 25px;
+}
+.img-star__star8 {
+  margin: 0 auto;
+  float: right;
+  position: absolute;
+  top: 1622px;
+  left: 40px;
+}
+.img-star__star9 {
+  margin: 0 auto;
+  float: right;
+  position: absolute;
+  top: 2363px;
+  left: 1277px;
+}
+.img-star__star10 {
+  margin: 0 auto;
+  float: right;
+  position: absolute;
+  top: 2396px;
+  left: 1320px;
+}
+.img-star__star11 {
+  margin: 0 auto;
+  float: right;
+  position: absolute;
+  top: 5636px;
+  left: 1319px;
+}
+.img-star__star12 {
+  margin: 0 auto;
+  float: right;
+  position: absolute;
+  top: 5684px;
+  left: 1249px;
+}
+
 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #BDED35;
   height: 150px;
 }
@@ -260,7 +356,6 @@ body {
   font-weight: 600;
   font-size: 24px;
   text-align: center;
-  padding-top: 60px;
 }
 
 @media (max-width: 767px) {
@@ -268,14 +363,62 @@ body {
     padding-left: 16px;
     padding-right: 16px;
   }
-  .hero-page__header {
-    align-items: center;
+  .hero-page__mob-img {
+    display: block;
+    position: absolute;
+    z-index: 1;
+  }
+  .hero-page__mob-img-1 {
+    margin: 0 auto;
+    float: right;
+    position: absolute;
+    top: -103.61px;
+    left: 188.16px;
+  }
+  .hero-page__mob-img-2 {
+    margin: 0 auto;
+    float: right;
+    position: absolute;
+    top: 97px;
+    left: 38px;
+  }
+  .hero-page__mob-img-3 {
+    margin: 0 auto;
+    float: right;
+    position: absolute;
+    top: 64px;
+    left: 92px;
+  }
+  .hero-page__mob-img-4 {
+    margin: 0 auto;
+    float: right;
+    position: absolute;
+    top: 580px;
+    left: 304px;
+  }
+  .hero-page__mob-img-5 {
+    margin: 0 auto;
+    float: right;
+    position: absolute;
+    top: 557px;
+    left: 273px;
+  }
+  .hero-page__img-star {
+    display: none;
+  }
+  .hero-page {
+    height: 700px;
+    position: relative;
   }
   .hero-page__content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 48px;
+    padding-top: 147px;
+  }
+  .hero-page__header {
+    align-items: center;
   }
   .hero-page__title {
     font-weight: 700;
@@ -298,6 +441,7 @@ body {
     font-weight: 700;
     padding-top: 48px;
     padding-bottom: 10px;
+    gap: 48px;
   }
   .mini-games__title {
     font-size: 40px;
@@ -318,6 +462,10 @@ body {
     width: 285px;
     padding: 29px 29px;
   }
+  .mini-games__unit-check {
+    width: 284px;
+    gap: 16px;
+  }
   .mini-games__unit-title {
     font-size: 32px;
   }
@@ -327,9 +475,46 @@ body {
   }
   .mini-games__unit-button {
     width: 285px;
+    height: 55px;
     font-size: 16px;
   }
   .body {
     display: none;
   }
-}/*# sourceMappingURL=stile.css.map */
+  .footer {
+    height: 100px;
+  }
+  .footer__text {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .mini-games__unit-img-1 {
+    background-color: #AD61FF;
+  }
+  .mini-games__unit-img-2 {
+    background-color: #FDAD00;
+  }
+  .mini-games__unit-img-3 {
+    background-color: #565EEF;
+  }
+  .mini-games__unit-img-4 {
+    background-color: #271A58;
+  }
+  .mini-games__unit-img-5 {
+    background-color: #99D100;
+  }
+  .mini-games__unit-img-6 {
+    background-color: #271A58;
+  }
+}
+/* Vector 
+position: absolute;
+left: 50.18%;
+right: -9.78%;
+top: -2.28%;
+bottom: 97.03%;
+
+background: #BCEC30;
+border: 1px solid #202027;
+transform: matrix(-0.32, 0.95, -0.96, -0.26, 0, 0);
+*//*# sourceMappingURL=stile.css.map */
