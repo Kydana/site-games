@@ -14,10 +14,13 @@ body {
 
 .hero-page {
     background-color: #E1FF8F;
-    background-image: url(img/hero-page_img.png);
+    height: 800px;
     background-repeat: no-repeat;
     background-position: right;
+    position: relative;
 }
+
+
 
 .hero-page__content {
     display: flex;
@@ -25,6 +28,10 @@ body {
     gap: 48px;
     padding-top: 196px;
     padding-bottom: 246px;
+}
+
+.hero-page__mob-img {
+    display: none;
 }
 
 .hero-page__header {
@@ -173,7 +180,7 @@ body {
     }
 
     &__title {
-        font-weight: 600;
+        font-weight: 700;
         font-size: 64px;
         color: #fff;
         font-family: "montserrat", sans-serif;
@@ -252,7 +259,98 @@ body {
     }
 }
 
+.img-star {
+    display: block;
+    &__star1 {
+        margin: 0 auto;
+        float: right;
+        position: absolute;
+        top: -333.46px;
+        left: 854px;
+    }
+    &__star2 {
+        margin: 0 auto;
+        float: right;
+        position: absolute;
+        top: 94px;
+        left: 63px;
+    }
+    &__star3 {
+        margin: 0 auto;
+        float: right;
+        position: absolute;
+        top: 69px;
+        left: 156px;
+    }
+    &__star4 {
+        margin: 0 auto;
+        float: right;
+        position: absolute;
+        top: 568px;
+        left: 1013px;
+    }
+    &__star5 {
+        margin: 0 auto;
+        float: right;
+        position: absolute;
+        top: 538px;
+        left: 948px;
+    }
+    &__star6 {
+        margin: 0 auto;
+        float: right;
+        position: absolute;
+        top: 877px;
+        left: 933px;
+    }
+    &__star7 {
+        margin: 0 auto;
+        float: right;
+        position: absolute;
+        top: 1570px;
+        left: 25px;
+    }
+    &__star8 {
+        margin: 0 auto;
+        float: right;
+        position: absolute;
+        top: 1622px;
+        left: 40px;
+    }
+    &__star9 {
+        margin: 0 auto;
+        float: right;
+        position: absolute;
+        top: 2363px;
+        left: 1277px;
+    }
+    &__star10 {
+        margin: 0 auto;
+        float: right;
+        position: absolute;
+        top: 2396px;
+        left: 1320px;
+    }
+    &__star11 {
+        margin: 0 auto;
+        float: right;
+        position: absolute;
+        top: 5636px;
+        left: 1319px;
+    }
+    &__star12 {
+        margin: 0 auto;
+        float: right;
+        position: absolute;
+        top: 5684px;
+        left: 1249px;
+    }
+}
+
 .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #BDED35;
     height: 150px;
 }
@@ -261,7 +359,6 @@ body {
     font-weight: 600;
     font-size: 24px;
     text-align: center;
-    padding-top: 60px;
 }
 
 @import '_mobilGS.scss';
