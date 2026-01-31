@@ -20,7 +20,12 @@ body {
     position: relative;
 }
 
-
+.hero-page {
+    display: block;
+    background-image: url(img/BigStar.png), url(img/Star\ 2.png), url(img/Star\ 3.png), url(img/Star\ 4.png), url(img/Star\ 5.png);
+    background-repeat: no-repeat;
+    background-position: 854px -333.46px, 63px 94px, 156px 69px, 1013px 568px, 948px 538px;
+}
 
 .hero-page__content {
     display: flex;
@@ -75,7 +80,9 @@ body {
 
 .body {
     background-color: #202027;
-    
+    background-image: url(img/Star-6.png), url(img/Star-7.png), url(img/Star-8.png);
+    background-repeat: no-repeat;
+    background-position: 933px 77px, 25px 770px, 40px 822px
 }
 
 .body__part-1 {
@@ -168,8 +175,8 @@ body {
 
 .mini-games {
     background-color: #202027;
-    background-image: url(img/Star\ 7.png), url(img/Star\ 6.png), url(img/Star\ 8.png), url(img/Star\ 10.png);
-    background-position: 1158px 47px, 1320px 126px, 1319px 3366px, 1249px 3414px;
+    background-image: url(img/Star-9.png), url(img/Star-10.png), url(img/Star-11.png), url(img/Star-12.png);
+    background-position: 1277px 93px, 1320px 126px, 1319px 3366px, 1249px 3414px;
     background-repeat: no-repeat;
     &__content { 
         display: flex;
@@ -360,5 +367,28 @@ body {
     font-size: 24px;
     text-align: center;
 }
+
+.mini-games-1__button {
+    width: 247px;
+    height: 66px;
+    border: 1px solid #202027;
+    background-color: #202027;
+    border-radius: 60px;
+    color: #fff;
+    font-family: "montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.mini-games__unit-img-1 {background-color: #AD61FF;}
+.mini-games__unit-img-2 {background-color: #FDAD00;}
+.mini-games__unit-img-3 {background-color: #565EEF;}
+.mini-games__unit-img-4 {background-color: #271A58;}
+.mini-games__unit-img-5 {background-color: #99D100;}
+.mini-games__unit-img-6 {background-color: #271A58;}
 
 @import '_mobilGS.scss';
