@@ -57,7 +57,8 @@ console.log(eee);
 
 const fff = [9, 8, 7, 'a', 6, 5];
 fff.sort();
-console.log(fff);
+const fffResult = fff.filter(Num => Num >= 1);
+console.log(fffResult);
 
 // Задание 7
 // Дан массив: [9, 8, 7, 6, 5].
