@@ -1,4 +1,4 @@
-// 1 Game
+// 1 Game Угадай число
 function startGame() {
     let randomNumber = Math.floor(Math.random() * 100) + 1;
 
@@ -32,7 +32,7 @@ const gameButton = document.getElementById('startGameBtn');
 
 gameButton.addEventListener('click', startGame);
 
-// 2 Game
+// 2 Game простая арифметика
 class MathProblemGenerator {
     constructor() {
         this.operations = ['+', '-', '*', '/'];
@@ -112,7 +112,7 @@ function runMathQuiz() {
 const twoGame = document.getElementById('arithmeticGame');
 twoGame.addEventListener('click', runMathQuiz);
 
-// 3 Game
+// 3 Game периверни текст
 function reverseText() {
     const turnOwer = prompt('Введите текст:');
     const reversedText = turnOwer.split('').reverse().join('');
@@ -123,9 +123,49 @@ function reverseText() {
 const turnButton = document.getElementById('owerTurn');
 turnButton.addEventListener('click', reverseText);
 
-// 4 Game
+// 4 Game камень, ножницы, бумага
 
-// 5 Game
+const choices = ["камень", "ножницы", "бумага"];
+function getComputerChoice() {
+    const randomIndex = Math.floor(Math.random() * choices.length);
+    return choices[randomIndex];
+}
+
+function determineWinner(userChoice, computerChoice) {
+    if (userChoice === computerChoice) {
+        return "Ничья!";
+    }
+    if (
+        (userChoice === "камень" && computerChoice === "ножницы") ||
+        (userChoice === "ножницы" && computerChoice === "бумага") ||
+        (userChoice === "бумага" && computerChoice === "камень")
+    ) {
+        return "Вы победили!";
+    } else {
+        return "Компьютер победил!";
+    }
+}
+
+function playGame() {
+    let userChoice = prompt("Выберите: камень, ножницы или бумага").toLowerCase();
+    while (!choices.includes(userChoice)) {
+        userChoice = prompt("Некорректный ввод! Выберите: камень, ножницы или бумага").toLowerCase();
+    }
+    const computerChoice = getComputerChoice();
+    const result = determineWinner(userChoice, computerChoice);
+    const message = `
+    Ваш выбор: ${userChoice} 
+    Выбор компьютера: ${computerChoice} 
+    Результат: ${result}
+    `;
+    console.log(message);
+    alert(message);
+}
+
+const gamefourButton = document.getElementById('RockPaperScissors');
+gamefourButton.addEventListener('click', playGame);
+
+// 5 Game простая викторина
 function victoryna() {
     const quiz = [
         {
@@ -177,3 +217,5 @@ function victoryna() {
 
 const game4Button = document.getElementById('victorynaGame');
 game4Button.addEventListener('click', victoryna);
+
+// 6 Game генератор случайных цветов
