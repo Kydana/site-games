@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="discription">Lorem, ipsum dolor.</p>
+    <p class="random">Lorem ipsum dolor sit.</p>
+    <p class="discription">Lorem ipsum dolor sit amet.</p>
+    <p class="random">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="discription">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+    <button class="btn">Добавить элемент</button>
+    <div class="content"></div>
+</body>
+<script>
+
+        const Text = document.querySelectorAll('.discription');
+        Text.forEach(element => {
+            element.textContent = 'Новый текст';
+        });
+
+        const btnEl = document.querySelector('.btn');
+        const contentEl = document.querySelector('.content');
+
+        btnEl.addEventListener('click', () => {
+            const headingEl = document.createElement('p');
+            headingEl.textContent = 'Новый абзац';
+            contentEl.appendChild(headingEl);
+        })
+    
+</script>
+</html>

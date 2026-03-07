@@ -219,3 +219,4 @@ const game4Button = document.getElementById('victorynaGame');
 game4Button.addEventListener('click', victoryna);
 
 // 6 Game генератор случайных цветов
+
