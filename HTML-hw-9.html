@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>задание 1</p>
+    <h1 id="heading">Заголовок, который можно скрыть и показать</h1>
+    <button id="toggleButton">Скрыть</button>
+    
+    <p>задание 3</p>
+    <button id="newHeading">Изменить текст</button>
+
+    <p>задание 2</p>
+    <p id="Text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo saepe vel culpa.</p>
+    <button id="styleButton">Изменить цвет</button>
+
+    <p>задание 4</p>
+    <p class="description">Исходный текст 1</p>
+    <div class="description">Исходный текст 2</div>
+    <span class="description">Исходный текст 3</span>
+    <p class="description">Исходный текст 4</p>
+
+    <script>
+        // задание 1
+        const heading = document.querySelector('#heading');
+        const button = document.querySelector('#toggleButton');
+        button.addEventListener('click', function() {
+
+            if (heading.style.display === 'none') {
+                heading.style.display = 'block';
+                button.textContent = 'Скрыть';
+            } else {
+                heading.style.display = 'none';
+                button.textContent = 'Показать';
+            }
+        });
+        
+        // задание 2
+        const colorText = document.querySelector('#Text');
+        const hangeColor = document.querySelector('#styleButton');
+        
+        hangeColor.addEventListener('click', function() {
+            colorText.style.color = 'red';
+        });
+        const hangeText = document.querySelector('#newHeading');
+        
+        // задание 3
+        hangeText.addEventListener('click', function() {
+            heading.textContent = 'Привет, мир!';
+        });
+        
+        // задание 4
+        const elements = document.querySelectorAll('.description');
+        elements.forEach(element => {
+            element.textContent = 'Изменённый текст';
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="discription">Абзац 1 с классом discription</p>
+    <p class="discrip">Абзацс без класса discription</p>
+    <p class="discrip">Абзац без класса discription</p>
+    <p class="discription">Абзац 2 с классом discription</p>
+    <p class="discription">Абзац 3 с классом discription</p>
+    <p class="discrip">Абзац без класса discription</p>
+    <p class="discrip">Абзац без класса discription</p>
+    <p class="discription">Абзац 4 с классом discription</p>
+    <button class="delet">Удалить элемент</button>
+
+    <script>
+        const button = document.querySelector('.delet');
+        button.addEventListener('click', function() {
+            const paragraph = document.querySelector('.discription');
+            paragraph.remove();
+        });
+    </script>
+</body>
+</html>
