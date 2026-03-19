@@ -3,6 +3,9 @@
         padding-left: 16px;
         padding-right: 16px;
     }
+    .hero-page {
+        background-image: none;
+    }
 
     .hero-page__mob-img {
         display: block;
@@ -96,6 +99,8 @@
 
         &__block {
             gap: 24px;
+            display: flex;
+            align-items: center;
         }
 
         &__unit {
