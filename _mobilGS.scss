@@ -8,15 +8,19 @@
     }
 
     .hero-page__mob-img {
-        display: block;
+        display: flex;
         position: absolute;
         z-index: 1;
+        max-width: 100%;
         &-1 {
             margin: 0 auto;
             float: right;
             position: absolute;
-            top: -103.61px;
-            left: 188.16px;
+            top: 0px;
+            left: auto;
+            right: -360px;
+            height: auto;
+            flex-shrink: 0;
         }
         &-2 {
             margin: 0 auto;
