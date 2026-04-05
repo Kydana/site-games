@@ -220,3 +220,10 @@ game4Button.addEventListener('click', victoryna);
 
 // 6 Game генератор случайных цветов
 
+const button = document.getElementById('ColorGame');
+
+button.addEventListener('click', function() {
+    const colors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#ffeaa7'];
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    this.style.backgroundColor = randomColor;
+});

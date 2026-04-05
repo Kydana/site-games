@@ -80,6 +80,38 @@ body {
   color: #202027;
 }
 
+.games-scroll {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 0px;
+  height: 90px;
+  background-color: #BCEC30;
+  display: flex;
+  align-items: center;
+}
+
+.scroll-content {
+  display: flex;
+  align-items: center;
+  gap: 51px;
+  padding: 5px 0;
+  font-weight: 700;
+  font-size: 30px;
+  font-family: "montserrat", sans-serif;
+  animation: scroll-left 15s linear infinite;
+  white-space: nowrap;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 .body {
   background-color: #202027;
   background-image: url(img/Star-6.png), url(img/Star-7.png), url(img/Star-8.png);
@@ -413,17 +445,24 @@ body {
     padding-left: 16px;
     padding-right: 16px;
   }
+  .hero-page {
+    background-image: none;
+  }
   .hero-page__mob-img {
-    display: block;
+    display: flex;
     position: absolute;
     z-index: 1;
+    max-width: 100%;
   }
   .hero-page__mob-img-1 {
     margin: 0 auto;
     float: right;
     position: absolute;
-    top: -103.61px;
-    left: 188.16px;
+    top: 0px;
+    left: auto;
+    right: -360px;
+    height: auto;
+    flex-shrink: 0;
   }
   .hero-page__mob-img-2 {
     margin: 0 auto;
@@ -498,6 +537,8 @@ body {
   }
   .mini-games__block {
     gap: 24px;
+    display: flex;
+    align-items: center;
   }
   .mini-games__unit {
     display: flex;
